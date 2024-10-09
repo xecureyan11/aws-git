@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    
+    <title>LEARN TAILWIND</title>
+</head>
+<body>
+    
+  <div class="header bg-orange-500 rounded-b mx-10 border-b-8 border-blue-500">
+    <h1 class="font-semibold text-3xl text-center pt-5 text-white">LEARN TAILWIND</h1>
+    <p class="text-white text-center pb-5">Belajar GRID with Tailwind 😀</p>
+  </div>
+
+  <div class="belajar-grid mt-3">
+    <h3 class="text-center text-3xl border-b-2 border-rose-300 my-3 py-3 uppercase">latihan grid</h3>
+  </div>
+
+  <div class="bg-rose-500 min-h-screen flex justify-center items-center">
+    <div class="grid grid-cols-4 bg-red-300 rounded p-7 gap-3">
+      <div class="bg-yellow-300 rounded text-black p-3 col-start-3 col-end-5">1</div>
+      <div class="bg-yellow-300 rounded text-black p-3 row-start-3 col-start-3 col-end-5">2</div>
+      <div class="bg-yellow-300 rounded text-black p-3 col-start-3 row-start-2">5</div>
+      <div class="row-start-3 col-start-2 bg-yellow-300 rounded text-black p-3">6</div>
+      <div class="row-start-2 bg-yellow-300 rounded text-black p-3 col-start-1 col-end-3">7</div>
+      <div class="bg-yellow-300 rounded text-black p-3 row-start-1 col-start-2">8</div>
+      <div class="bg-yellow-300 row-start-4 col-start-3 rounded text-black p-3">9</div>
+      <div class="col-start-1 col-end-3 row-start-4 bg-yellow-300 rounded text-black p-3">10</div>
+    </div>
+  </div>
+
+</body>
+</html>
